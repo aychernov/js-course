@@ -37,3 +37,8 @@ camelCase - все остальные переменные
 # 15.02 lesson 2
 
 //Объявление переменных
+let - change variable
+
+const - konstanta
+
+var - global
