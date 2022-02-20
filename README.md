@@ -1,6 +1,8 @@
-# JavaScript course
+# JavaScript Course
 
-# 14.02 lesson 1
+JavaScript course
+
+# 14.02 lesson 1 Введение
 
 Самое важное: Выражения, функции, объекты.
 
@@ -22,7 +24,7 @@ Log → Method (функция объекта)
 
 /
 
-# 15.02 lesson 2
+# 15.02 lesson 2 Переменные
 
 Выражение с побочными действиями - side effects (возвращает значение и выполняет действие)
 
@@ -34,11 +36,20 @@ DB_PASSWORD - значения известны до запуска и не ме
 
 camelCase - все остальные переменные
 
-# 15.02 lesson 2
-
 //Объявление переменных
+
 let - change variable
 
 const - konstanta
 
 var - global
+
+let a - объявление
+
+let a = 2 - присваивание
+
+let b - undefined (нет значения)
+
+const a = 20 (присваивание и объявление должно быть сразу)
+
+# 16.02 lesson 3 Типы переменных
