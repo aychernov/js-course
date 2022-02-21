@@ -1,5 +1,9 @@
-const myName = 'Alex'
+const a = () => {
+  console.log('hey');
+}
 
-myName = ''
+a()
 
-console.log(myName);
+a = 10
+
+a()
