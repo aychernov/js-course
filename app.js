@@ -1,9 +1,12 @@
-const a = () => {
-  console.log('hey');
+const name = 'alex'
+const age = 22
+
+const obj = {
+  name,
+  age
 }
 
-a()
 
-a = 10
+console.log(obj);
 
-a()
+
