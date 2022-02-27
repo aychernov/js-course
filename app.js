@@ -3,10 +3,13 @@ const age = 22
 
 const obj = {
   name,
-  age
+  age,
+  city() {
+    console.log('Jet');
+  },
+  new: 22,
 }
 
 
-console.log(obj);
-
+JSON.stringify(obj)
 
