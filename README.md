@@ -134,3 +134,5 @@ console.log = window.console.log
 ## Json - Javascript object notation
 
 # 1.03 Мутация в js lesson 6
+
+## Значения примитивных типов
