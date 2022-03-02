@@ -135,4 +135,15 @@ console.log = window.console.log
 
 # 1.03 Мутация в js lesson 6
 
-## Значения примитивных типов
+##
+
+Мутирование копий объекта - происходит во всех объектах (потому что ссылочный тип, 1 объект и много ссылок на него)
+const person = {
+age: 22
+}
+
+const person2 = person
+person2.age = 26
+
+console.log(person.age) // 26
+copy by referense
