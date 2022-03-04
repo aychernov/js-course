@@ -145,3 +145,19 @@ person2.age = 26
 
 console.log(person.age) // 26
 copy by referense
+
+## Как избежать мутаций
+
+сonst person2 = Object.assign( { }, person) - присваивает новый объект со сво-ми объекта person
+
+Избегаем только корневые эл-ты!
+
+## Способ 2
+
+сonst person2 = { ...person } //Оператор разделения объекта на св-ва. Так же без вложенных объектов!
+
+## Способ 3 c вложенными св-ми!
+
+сonst person2 = JSON.parse( JSON.stringify ( person ) )
+
+Ссылки на вложенные св-ва не сохраняются (объекты)
