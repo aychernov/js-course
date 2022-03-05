@@ -146,7 +146,7 @@ person2.age = 26
 console.log(person.age) // 26
 copy by referense
 
-## Как избежать мутаций
+## Как избежать мутаций в объектах
 
 сonst person2 = Object.assign( { }, person) - присваивает новый объект со сво-ми объекта person
 
@@ -161,3 +161,5 @@ copy by referense
 сonst person2 = JSON.parse( JSON.stringify ( person ) )
 
 Ссылки на вложенные св-ва не сохраняются (объекты)
+
+# Функции
