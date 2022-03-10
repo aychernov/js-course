@@ -177,3 +177,35 @@ console.log(c)
 }
 
 sum()
+
+## Если функция не возвращает результат - вернёт undefined
+
+## Внутри функции лучше не мутировать внешние объекты!!!
+
+### Cоздание копии объекта
+
+const personOne = {
+age: 22
+}
+
+const updPerson = increaseAge(personOne)
+
+function increaseAge(person) {
+
+const updPerson = { ...person }
+updPerson.age += 1
+return updPerson
+
+}
+
+console.log(personOne.age);
+
+console.log(updPerson.age);
+
+# Колбэк функции
+
+Когда одна функция вызывает другую (как параметр например)
+
+## Функция - single purpose + pure подход
+
+Функция возвращает undefined (если не задан return) !
