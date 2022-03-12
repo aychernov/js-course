@@ -209,3 +209,5 @@ console.log(updPerson.age);
 ## Функция - single purpose + pure подход
 
 Функция возвращает undefined (если не задан return) !
+
+# 12.03 Область видимости
