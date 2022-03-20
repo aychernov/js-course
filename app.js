@@ -1,5 +1,1 @@
-function print() {
-  console.log(2);
-}
-
-print
+console.log(typeof true === 'boolean')
