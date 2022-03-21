@@ -1,1 +1,3 @@
-console.log(typeof true === 'boolean')
+let a = {}
+
+console.log(!!a)

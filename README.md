@@ -291,6 +291,10 @@ myFunction() () - оператор вызова функции
 
 (Возвращают значение одного из операндов)
 
+## Проверка с оператором typeof
+
+typeof 10 = 'number' // true
+
 ## Ложные значения
 
 Boolean(value) -> false
@@ -300,3 +304,18 @@ Boolean(value) -> false
 3. ''
 4. undefined
 5. null (явное отсутствие значения)
+
+## Оператор НЕ ( ! )
+
+!10 = false
+!0 = true
+!'abc' = false
+!'' = true
+!true = false
+!undefined = true
+
+### Двойное отрицание. Если исходное значение правдиво, то !! всегда дает true
+
+let a = {} // !!a = true
+
+!!10 = true etc.
