@@ -1,0 +1,18 @@
+.wrapper {
+  color: red;
+}
+
+.wrapper:nth-child(odd) {
+  color: violet;
+}
+.class1 {
+  color: green;
+}
+
+.class2 {
+  color: blue;
+}
+
+#third {
+  color: gold;
+}
