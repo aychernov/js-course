@@ -321,3 +321,5 @@ Boolean(value) -> false
 let a = {} // !!a = true
 
 !!10 = true etc.
+
+## Оператор || (Или)
