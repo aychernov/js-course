@@ -1,12 +1,8 @@
-const fnError = () => {
-  throw new Error('Error')
+function fn(a) {
+  console.log(a);
 }
 
 
-try {
-  fnError()
-} catch (err) {
-  console.error(err)
-  console.log(err.message)
-}
 
+
+fn(const c = 2)
