@@ -1,8 +1,6 @@
-function fn(a) {
-  console.log(a);
+
+const fn = (value) => {
+  return value ? console.log('TRUE') : console.log("False")
 }
 
-
-
-
-fn(const c = 2)
+console.log(fn());
