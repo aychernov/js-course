@@ -473,8 +473,24 @@ const arr2 = new Array(1,2,3) экзэмпляр класса Массив
 
 ## forEach - аргумент -> функция. Перебирает все элементы массива. Оригинальынй массив НЕ МЕНЯЕТ. Возвращает undefined.
 
+
+
 ## Map - так же колбэк функция в аргументе. Перебирает все элементы и возвращает НОВЫЙ массив.
 
+
+const arr = [1, 2, 3]
+console.log(arr);
+
+const newarr = arr.map(el => el + "3")
+  
+console.log(newarr);
+
+### ЯВНЫЙ ВОЗВРАТ 
+const newarr = arr.map(el => {
+
+  return el * 3
+
+})
 # Деструктуризация объекта - создание переменных на основе св-в объекта. Объявление автоматически.
 
 const user = {
@@ -555,3 +571,170 @@ switch (выражение) {
 
 Тоже самое что и IF но используется только ВЫРАЖЕНИЯ.
 
+
+# Циклы - для повторяющихся действий.
+
+## Цикл For
+for ( Начальная инструкия; Условие; Итерационное действие ) {
+  Код выполняющийся для на каждой итерации
+}
+
+# Цикл forEach - для перебора массивов
+const arr = [1, 2, 3]
+
+arr.forEach ( ( element, index) => {
+
+  console.log(element, index);
+
+});
+
+# Цикл While - может ни разу не выполнится
+
+while(Условие) {
+
+  // some code
+
+}
+
+# Do while - выполнится 1 раз точно
+
+do {
+
+ //some code 
+
+}
+
+while (условие)
+
+# Цикл For in для объектов
+
+for (key in Object) {
+
+  // Действие с каждым св-ом объекта
+
+  // Значение св-ва - Object[key]
+
+}
+
+# forEach для объектов
+const obj = {
+
+  age,
+
+  name
+
+}
+
+# Object.keys & Object.value превращают obj в массив
+Object.keys(obj).forEach ( key => {
+
+  console.log(key, obj[key]);
+
+})
+
+
+# Цикл For in для массивов
+const arr = [1, 3, 3]
+
+for (const key in arr) {
+  console.log(arr[key]);
+}
+
+
+# Цикл for of (ES6) Перебор символов. НЕ ДЛЯ ОБЪЕКТОВ
+for (Element of Iterable){
+  
+  Действие с определенным элементом
+
+}
+
+## Цикл for of для массива (FOR EACH IS BETTER!)
+
+const arr = [1, 2, 3]
+
+for (el of arr) {
+
+  console.log(el);
+
+}
+
+
+# Модули - позволяют структурировать код и позволяют избежать дублирование кода. ES6 - export, import
+
+## Импорт и экспорт
+import{
+  one,
+
+  two
+
+}
+
+export{
+
+  one as newOne,
+
+  two
+
+}
+
+
+# Классы и прототипы ES6
+class Comment {
+
+  constructor(text) {
+
+    this.text = text
+
+    this.vote = 0
+
+  }
+
+  upVote() {
+
+    return this.vote += 1
+
+  }
+}
+
+const firstComm = new Comment("hello")
+
+firstComm.upVote()
+
+console.log(firstComm);
+
+## Классы позволяют создавать прототипы для объектов. На основании прототипов создают экземпляры. Могут иметь собственные св-ва и методы. Так же наследуют св-ва и методы прототипов.
+
+
+
+## Переменная this указывает на экземпляр класса.
+
+# new - оператор создания экземпляра.
+
+## Цепочка прототипов - цепочка наследования.
+
+# instanceof - оператор проверки принадлежности.
+
+
+# Проверка принадлежности св-тв экземпляру объекта.
+ firstComm.hasOwnProperty('text') // true
+
+ firstComm.hasOwnProperty('upvote') // false -> апвоут НЕ СОБСТВЕННЫЙ метод объекта Firstcomm (наследуется от род класса Comment)
+
+
+# Статические методы -> доступен как св-во и НЕ НАСЛЕДУЕТСЯ экземплярами класса.
+
+  static mergeComm(first, sec) {
+
+    return `${first} ${sec}`
+
+  }
+
+
+# Расширение других классов. Указывать конструктор не нужно, он наследуется. EXTENDS.
+
+class NumberArr extends Array {}
+
+### Строки и числа ведут себя как объекты.
+
+
+# ПРОМИСЫ

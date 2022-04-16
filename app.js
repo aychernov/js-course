@@ -1,6 +1,18 @@
+class Person {
+  constructor(age, name) {
+    this.age = age
+    this.name = name
+  }
 
-const fn = (value) => {
-  return value ? console.log('TRUE') : console.log("False")
+  nextYear() {
+    return this.age += 1
+  }
+
 }
 
-console.log(fn());
+const newPerson = new Person(20, "Alex")
+console.log(newPerson);
+
+newPerson.nextYear()
+
+console.log(newPerson);
